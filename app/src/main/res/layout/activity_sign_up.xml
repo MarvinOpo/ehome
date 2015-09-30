@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.uc.ehome.SignUpActivity">
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/prompt_firstname"
+            android:ems="10"
+            android:id="@+id/firstnameField"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="131dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/prompt_lastname"
+            android:ems="10"
+            android:id="@+id/lastnameField"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/firstnameField"
+            android:layout_alignParentLeft="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/prompt_mobile_number"
+            android:ems="10"
+            android:id="@+id/mobileNoField"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lastnameField"
+            android:layout_alignParentLeft="true"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="@string/prompt_email"
+            android:id="@+id/emailField"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mobileNoField"
+            android:layout_alignParentLeft="true"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderSpinner"
+            android:entries="@array/gender_choices"
+            android:layout_below="@+id/emailField"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_text"
+            android:id="@+id/signUpButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
